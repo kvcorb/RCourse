@@ -67,7 +67,7 @@ abline(h=0, lwd=2)
 
 
 
-# normal plot
+# normal plot and other stuff
 qqnorm(res, datax = T, main="Residuals Normal Probability Plot", lwd=2)
 res.ord=sort(res)
 n=length(res)
