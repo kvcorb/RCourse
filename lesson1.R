@@ -240,11 +240,11 @@ library("lme4")
 
 
 
-#e <- file.choose()
-lauree=read.csv("laureandi.csv", header = TRUE, sep = ";")
-
-x <- read.table("C:/Users/tania/Documents/R/Simulati-Multilivello/simBRA.txt", sep="\t",header=T)
-ncountries <- length(table(x$country))
-N <- nrow(x)/ncountries
-set.seed(nchar("simulseed"))
+# #e <- file.choose()
+# lauree=read.csv("laureandi.csv", header = TRUE, sep = ";")
+# 
+# x <- read.table("C:/Users/tania/Documents/R/Simulati-Multilivello/simBRA.txt", sep="\t",header=T)
+# ncountries <- length(table(x$country))
+# N <- nrow(x)/ncountries
+# set.seed(nchar("simulseed"))
 
