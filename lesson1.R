@@ -6,7 +6,8 @@ whales
 # the same as above
 x = c(74, 122, 235, 111, 292)
 y = c(111, 211, 133, 156, 79)
-c(x,y)
+z=c(x,y)
+
 
 sum(whales)                     # total number of beachings
 length(whales)                  # length of data vector
@@ -16,18 +17,20 @@ mean(whales)                    # mean function finds average
 
 # some elementary statistics
 x = c(2,3,5,7,11)
-xbar = mean(x)
-x - xbar   # the difference
-(x - xbar)^2                    # the squared difference
-sum((x -  xbar)^2)               # sum of squared  differences
+pippo = mean(x)
+x - pippo   # the difference
+(x - pippo)^2                    # the squared difference
+sum((x -  pippo)^2)               # sum of squared  differences
 n = length(x)
 n
-sum((x-xbar)^2)/n             # variance
-  standard_deviation <- sqrt(sum((x-xbar)^2)/n)       # standard deviation
+varianza=sum((x-pippo)^2)/n             # variance
+  std <- sqrt(sum((x-pippo)^2)/n)       # standard deviation
 
 ### built in alternatives (can you spot the difference?)
 var(x)
 sd(x)
+
+
 
 # sequences
 
@@ -36,12 +39,12 @@ rev(1:10)                       # countdown
 10:1                            # a > b
 
 seq(1,9,by=2)                   # odd numbers
-seq(1,10,by=2)                  # as 11 > 10 it is not included
+seq(1,11,by=2)                  # as 11 > 10 it is not included
 seq(1,9,length=5)               # 5 numbers only
 
 rep(1,10)
 
-rep(1:3,3)
+rep(1:3,30)
 
 
 
@@ -54,11 +57,17 @@ length(ebay)
  ebay[length(ebay)] # in case length isn't known
  ebay[1:4]
 
- ebay[c(1,5,9)]
+ selezione=c(1,5,9)
+ ebay[selezione]
+ 
  ebay[-1] # all but the first
+ 
  ebay[-(1:4)] # all but the 1st - 4th
 
- ebay[10:13]=c(97.0,99.3,102.0,101.8)
+ ebay[-c(1,4)] # all but the 1st - 4th
+ 
+ ebay[8:11]=c(97.0,99.3,102.0,101.8)
+ 
  ebay
 
 # logical values
@@ -76,7 +85,7 @@ length(ebay)
 
   x > 1 # is x more than 1
 
-  x > l & x < 5 # is x bigger than 1 and less than 5
+  x >  & x < 5 # is x bigger than 1 and less than 5
 
   x > 1 && x < 5 # First one is false
 
@@ -88,7 +97,9 @@ length(ebay)
 
   x != 3 # is x not equal to 3
 
-  ! x == 3 # not (x equal to 3)
+  
+    
+    ! x == 3 # not (x equal to 3)
 
  
  
@@ -96,9 +107,11 @@ length(ebay)
 
 # 
  x = 1:3
- names(x) = c("me","you","they") # set the names
+ names(x) = c("io","tu",'essi stessi') # set the names
  
- x["you"]
+ x['essi stessi']
+ 
+ 
 
 
 
@@ -107,9 +120,14 @@ length(ebay)
 
 x=rnorm(1000)
 ncountries=6
-a0 <- rnorm(ncountries, mean=0.8, sd = 0.05)
+a0 <- rnorm(ncountries, mean=108, sd = 1.5)
 
-
+# plot a normal density
+x=seq(from=-4,to=4,by=0.1)
+y=dnorm(x)
+plot(x,y, type='l')
+ 
+ 
 # some graphics
 whales <- c(74,122,235,111,292,111,211,133,156,79)
 
