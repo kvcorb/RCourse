@@ -1,5 +1,7 @@
 # some comments
 
+# other comments
+
 
 # some data
 whales <- c(74,122,235,111,292,111,211,133,156,79)     
