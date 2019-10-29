@@ -1,3 +1,5 @@
+# alcuni commenti
+
 # specifying needed libraries
 library("lme4")
 
