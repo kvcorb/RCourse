@@ -1,4 +1,4 @@
-# developer version
+# master version
 # other comments corrected local mod
 # other comments
 # new comment
@@ -6,7 +6,7 @@
 
 
 # some data
-whales <- c(74,122,235,111,292,111,211,133,156,79)     
+whales <- c(74,122,235,111,292,111,211,133,156,79,125,156,183)     
 whales
 
 # the same as above
